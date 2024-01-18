@@ -1,0 +1,334 @@
+/*Animation */
+@keyframes rolling{
+    /*Sol 1.  margin 사용하는 방법
+    
+    0%{
+                margin-top: 0;
+    }
+    25%{        margin-top: -1.5em;
+    }
+    50%{        margin-top: -3em;
+    }
+    75%{        margin-top: -4.5em;
+    }
+    100%{
+        margin-top: -6em;
+    }
+    
+    */
+
+    /*Sol 2. transform, translate 활용 기법 (%비율 로 이동)  */
+    0%{         transform: translateY(0); 
+    }
+    25%{        transform: translateY(-20%);
+    }
+    50%{        transform: translateY(-40%);
+    }
+    75%{        transform: translateY(-60%);
+    }
+    100%{       transform: translateY(-80%);
+    }
+
+}
+
+
+/*[시작] CSS 작업에 앞서 reset과정!*/
+
+/*
+CSS 기본 개념 
+1) block, inline element; 요소의 범위가 웹 전체 영역
+(block: 쉽게 줄바꿈을 일으키는 요소, inline: context크기 만큼 영역) 
+2) context, padding, border, margin 의미
+[참고자료]
+1. 생활코딩 web2 - CSS(박스모델): https://youtu.be/MLjCVUspcDo?si=pOntIIy7U0ZfR4WS
+2. 검색 블로그 글: https://velog.io/@taeha7b/block-Inline-box-model 
+
+*/
+
+
+body, h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*ul의 순서 첨자 삭제, html li속성이 나타나지 않도록 하는 요인*/
+.profile-section-list{
+list-style-type: none;
+}
+
+
+/*h의 글자 크기, 문체 수정*/
+h1, h2{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/*a의 밑줄, 색상 삭제 및 통일*/
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*[끝] CSS 작업에 앞서 reset과정!*/
+
+
+body{
+    background-color: black;
+    color: #999;
+}
+
+/*상단 배경 이미지 사입 및 설정 부분*/
+.portrait 
+{
+    background-image: url(me2.jpg);
+    background-size: cover;
+    /*
+    background-size: cover의 역할, 현재 불러온 이미지를 배치하는 방법
+    참고자료:  https://www.w3schools.com/cssref/css3_pr_background-size.php
+    */
+    background-position: center; 
+    padding-top: 59.95%; /*이미지 크기*/
+}
+
+
+.profile
+{
+    padding: 4%;
+    min-height: 4500px;
+}
+
+.profile-header,
+.profile-section {
+    padding-bottom: 14%;
+    /*
+    padding bottom의 역할
+    (contents의 경계 일정간격 떨어지게, 해당 코드에서는 Profile 내용별 구분 가독성을 위해서 사용)
+    */
+}
+
+.profile-section h2 {
+  /*profile 경계선 style(border-top)*/
+  /*https://www.w3schools.com/cssref/pr_border-top.php*/
+    border-top: 5px solid;
+    color: orangered; 
+    font-size: 1.5rem;
+    /*Profile section title 값이 스크롤 하는 동안 이어지도록 하는 작업*/
+   /* border: 1px solid red; 영역*/ 
+    position: sticky;  /*상단 이미지 고정 명령어*/
+    top:0%;  /*이어지는 영역 시작점?? -> 해당부분 역할은?? */
+    background-color: #111; 
+    box-shadow: 0 0 10px 10px #111; /*그림자 느낌, 투명도*/
+}
+
+.name{
+    font-size: 30px;
+    line-height: 1.5;
+    font-style: italic; 
+    /*tip, 글자의 간격, 너무 붙어 있으면 글자가 일부 짤리는 경우가 있다.*/
+    /*이름이 순차적으로 올라가는 작업 위해서, 좌표 초기 위치 설정*/
+    /*순차적으로 내려가는 모션을 구현하기 위해서, 간격: 30px -> 30이라고 생각! */
+    margin-bottom: 30px; 
+}
+
+.name-job{
+    display: inline-block;
+    color: white;
+    /*background-color: red;*/
+    vertical-align: top; /*web의 상단 부분 맞추는 작업*/
+
+    /*직업 이름 움직이는 원리*/
+    height: 1.5em; /*(영역 정하기) 높이 제한, 보이는 글자의 최고 font크기를 설정*/
+    overflow: hidden; /*(숨기기) 영역에서 벋어나는 글자 숨기기 */
+    /*직업 이름 올라가게 하는 원리, 좌표 이동*/
+    /*margin 요소는 뒤에 오는 요소에 영향을 준다! so, html에서 움직일 영역으로 나뉘어 준다*/
+
+    /*오른쪽 글씨가 짤려서 확장*/
+    padding-right: 0.5em;
+}
+
+.name-job-list{
+    /*margin-top: 0em; 비율이 유동적으로 변화할수 있도록 조정해 두는 것*/
+    animation-name: rolling;
+    animation-duration: 5s; /*넘어가는 속도*/
+    animation-iteration-count: infinite; /*반복되는 횟수 loop*/
+    /*animation 연출 방향, animation-direction*/
+
+}
+
+.name-title{
+    font-size: 1.5em; /*이름 font의 크기 변화, name이라는 div의 설정에 비례하여 변동*/
+    line-height: 1; /*줄 간격*/
+    color: white;
+}
+
+
+#contact-font{
+  font-size: 1.3em; 
+  color: white;
+}
+
+#click_below{
+  font-size: 0.7em; 
+  color: white;
+}
+/*연락 버튼(email, tel, Linkedin) 입력을 넣기 위해서 만든 css 코드*/
+ 
+/* .icons
+{
+    
+}
+
+.icons a{
+    background-image: url("icons.png");
+    //이미지 활용을 위해서 이미지 크기 조절이 필요했음
+    width: 30px; 
+    height: 30px; 
+    display: inline-block; //icon 가로 배치 
+    //<a> tag 글자 출력이 보이지 않도록하는 것, image replacement 기법
+    text-indent: -9999px;
+
+    
+}
+
+//issue 이미지 전환이 이루어지지 않음
+.icons a.email { background-position: 0 0; }
+.icons a.tel { background-position: -30px 0; } //center
+.icons a.Linkedin { background-position: -60px 0; } right */
+
+
+#contactlist {
+    /*
+    기준점을 상속받겠다는 의미. (없는 경우 기준은 viewport가 된다고 함)
+    [참고자료] https://creamilk88.tistory.com/197 
+    자료를 통해서는 조금 이해가 어려워.. 
+    w3school 
+    >> https://www.w3schools.com/css/css_positioning.asp 
+    */
+    
+    position: relative;
+  }
+  
+  #contactlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+  }
+  
+  #contactlist li, #contactlist a {
+    height: 30px;
+    display: block;
+  }
+  
+  #email {
+    left: 0px;
+    width: 30px;
+    background: url('icons.png') 0 0;
+  }
+  
+  #tel {
+    left: 30px;
+    width: 30px;
+    background: url('icons.png') -30px 0;
+    
+  }
+  
+  #Linkedin {
+    left: 60px;
+    width: 30px;
+    background: url('icons.png') -60px 0;
+  }
+  
+  /*마우스 포인터가 접촉되었을때 반응, hover라고 한다. */
+  #email a:hover {
+    background: url('icons.png') 0 -30px;
+  }
+  
+  #tel a:hover {
+    background: url('icons.png') -30px -30px;
+  }
+  
+  #Linkedin a:hover {
+    background: url('icons.png') -60px -30px;
+  }
+
+/*profile section (profile section의 요소들에 모두 적용)*/
+.profile-section-style h3
+{
+  border-top: 3px solid;
+  
+    color: orange;
+    font-size: 1.2rem;
+
+}
+
+/*
+easy_find 링크 밑줄 그어지는 효과
+[참고자료]: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+*/
+
+/*easy_find Link*/
+#experience-link
+{
+  text-decoration: underline;
+  color: rgb(77, 77, 233);
+}
+
+  #easy_find_role{
+    /*ul 테그 list요소들이 안쪽으로 점이 찍히도록 하는 것*/
+    list-style-position: inside;
+  }
+
+
+/*Mbti 링크 표시*/
+#click_me{
+  font-size: 0.75rem;
+}
+
+/*Reference 링크 표시*/
+
+.Reference-link{
+  text-decoration: underline;
+}
+
+.reference-subtitle{
+  font-size: 1.15em;
+  font-weight: bold; /*bold체 선언, https://www.w3schools.com/cssref/pr_font_weight.php*/
+}
+
+.outline-list{
+  list-style-position: inside;
+
+}
+
+
+  /*pc 화면 크기에 대응하여 변동적인 화면 구성을 위해서*/ 
+  /*media_query: 화면의 크기에 반응하는 구성이 보이 도록하는 것. */
+@media(min-width: 900px){ /*의미: 화면 가로 길이 > 900px 인 경우 동작*/
+  /*화면 구성 수정 */  
+   
+
+  .portrait{ /*배경 이미지*/
+      position: fixed; 
+      left: 0; 
+      top: 0; 
+      width: 60vw; 
+      height: 100vh;
+      /*padding-top 사용한다면 지정 크기에 width, height가 합한 값이 된다*/
+      padding: 0; /*기존 padding값을 초기화*/ 
+      /*padding, margin 이란? https://velog.io/@bami/CSS-%EB%A7%88%EC%A7%84margin%EA%B3%BC-%ED%8C%A8%EB%94%A9padding*/
+      
+      /*
+      display: grid를 배우고 활용하려고 하였으나... 
+      >> grid색상은 변한이 되지 않는다고 하여서, border로 방안을 대체함.
+      >> 참조문서, https://stackoverflow.com/questions/45884630/css-grid-is-it-possible-to-apply-color-to-grid-gaps
+      */
+      border-right: 5px solid;
+      border-color: orange;
+    }
+    .profile{ /*profile 내용들*/
+      margin-left: 60vw;
+    }
+}
