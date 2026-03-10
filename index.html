@@ -1,318 +1,155 @@
 <!DOCTYPE html>
 <html lang="kor">
     <head>
-        <meta charset="UTF-8"> <!--한글 출력 위한 인코딩 설정-->
-        <title>About Hansung</title>
-        <meta name = "viewport" content="width=device-width, user-scalable=no">
-        <!--tag 'meta, viewport'의 역할: 사용자 기기에 대응하는 화면 크기 조절-->
-        <!--https://www.w3schools.com/tags/tag_meta.asp-->
+        <meta charset="UTF-8">
+        <title>About Hansung | Portfolio</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="stylesheet" href="style.css">
     </head>
-    <!-- web wifi마다 ip달라서 등록해 놓은 주소와 다르다면 연결되지 않음-->
-    <!-- 확장자 ip address 설치하여 우측 하단에 표시되는 주소를 활용하여 조회한다면 이어진다. -->
-    <!--https://www.youtube.com/watch?v=pyoTcvNrbmk&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb&index=19-->
     
     <body>
-
-        <!--영상자료 Tip, 작업을 '덩어리 부분으로 나누어서 작업' -->
-  
-        <div class = "portrait"></div>
-        <div class = "profile">
+        <div class="portrait"></div>
+        <div class="profile">
             
-            <!--title-->
-            <div class = "profile-header">
+            <div class="profile-header">
                 <div class="name">Hello, I'm a 
                     <div class="name-job">
-                    <ul class="name-job-list"> <!--직업 이름-->
-                        <li>Developer</li>
-                        <li>Epicure</li>
-                        <li>Student</li>
-                        <li>Traveler</li>
-                        <li>Developer</li> <!--반복 연산 위해서-->
-                    </ul>
+                        <ul class="name-job-list">
+                            <li>Developer</li>
+                            <li>Researcher</li>
+                            <li>Problem Solver</li>
+                            <li>Vibe Coder</li>
+                            <li>Developer</li>
+                        </ul>
                     </div>
-                    <!-- 
-                    사진 및 텍스트 설명 attribute: title 
-                    [참고자료] https://m.blog.naver.com/3pmarketer/223165446872
-                    -->
                     <h1 class="name-title">Jang, Hansung</h1>
                 </div>
                 <p>
-                    "우리 생활에 불편함은 무엇이 있을까?”라는 궁금증을 가지고
-                    사람들의 생활에 편의를 주는 서비스 개발에 관심이 많은 
-                    컴퓨터를 좋아하는 학생 개발자 입니다. 
-                <p>
+                    "우리 생활에 불편함은 무엇이 있을까?"라는 질문을 멈추지 않습니다. <br>
+                    직접 관찰하는 것에 그치지 않고, Web/App 서비스를 통해 <br>
+                    실질적인 해결책을 제시하는 <strong>Web Developer</strong>입니다.
+                </p>
 
                 <p id="contact-font">
-                    <br> Contact<span id="click_below">(click bellow) </span>
+                    <br> Contact<span id="click_below">(click below) </span>
                 </p>
                 <br>
-            <!-- <div class = "icons" style="position: relative;">
-                    <a href="">email</a>
-                    <a href="">tel</a>
-                    <a href="">Linkedin</a>
-                </div>
-            --> 
 
-            <!--w3 사이트에서 image splite 예시를 활용하여 solution, 
-                단독으로 실험했을때는 <div>의 경우도 실행되었지만 web에서는 적용이 되지 않음-->
-            <!--참조 문서, https://www.w3schools.com/css/css_image_sprites.asp#gsc.tab=0-->
                 <ul id="contactlist">
-                    <li id="email"><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=22000638@handong.ac.kr" target="_blank" title="Gmail 보내기"></a></li>
-                    <!--email 주소 연결 방법-->
-                    <!-- 
-                    1. mailto 구문: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_mail
-                    2. <a>tag 활용방법:  https://weblin.tistory.com/12#google_vignette 
-                        -->
+                    <li id="email"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=22000638@handong.ac.kr" target="_blank" title="Gmail 보내기"></a></li>
                     <li id="tel"><a href="https://meet.google.com/ium-xhfq-vxy" title="Google Meet 예약하기"></a></li>
                     <li id="Linkedin"><a href="https://www.linkedin.com/in/hansung-jang-4197b2279/" title="Linkedin 살펴보기"></a></li>
                 </ul>
-
-
-            <!--Major & Experience section -->
             </div>
-            <div class ="profile-section">
-                <h2>Major & Experience</h2>
+
+            <div class="profile-section">
+                <h2>Major & Skills</h2>
                 <ul class="profile-section-style">
-                    <li class ="profile-section-list">
-                        <h3>Major</h3>
-                        <ol>
-                        <li>Computer Science(45)</li>
-                        <li>Electronic Engineering(33)</li>
-                        </ol>
+                    <li class="profile-section-list">
+                        <h3>Affiliation</h3>
+                        <ul>
+                            <li>한동대학교 전산전자공학부 (2020. ~ )</li>
+                            <li>한동대학교 대학일자리플러스센터 (2024.12. ~ )</li>
+                            <li>마음, 인지행동심리상담센터 (2026.01. ~ )</li>
+                        </ul>
                         <br>
+                        <h3>Technical Skills</h3>
                         <p>
-                            [Knowledgable] C/C++
+                            <strong>Expertise:</strong> Flutter & Dart, Javascript, HTML/CSS <br>
+                            <strong>Language:</strong> C/C++, JAVA, SQL(MySQL) <br>
+                            <strong>AI:</strong> VIBE CODE prompting (AI 활용 최적화)
                         </p>
                     </li>
+                    <li class="profile-section-list">
+                        <h3>Core Courses</h3>
+                        <p style="font-size: 0.85em; line-height: 1.8;">
+                            JAVA · 데이터구조 · 운영체제 · SQL 데이터베이스 설계 · 컴퓨터구조 · 이산수학 · 선형대수학 · 모바일 앱개발 · 디자인리서치 · 디자인 스프린트 · 공학글쓰기 · 인간관계와 자기성장
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
-                    <li class ="profile-section-list">
-                        <h3>Experience</h3>
+            <div class="profile-section">
+                <h2>Projects</h2>
+                <ul class="profile-section-style">
+                    <li class="profile-section-list">
+                        <strong>마음, 인지행동심리상담센터 웹사이트 (26.01. ~ )</strong>
+                        <p>Web Developer | <a href="https://github.com/HansungJang/web-dev-project-1-one-page-version-" class="Reference-link">Github</a></p>
+
+                        <strong>SILSO | 실패 자산 커뮤니티 플랫폼 (25.07. ~ 25.10.)</strong>
+                        <p>FE & Researcher | <a href="https://github.com/yeskialex/silso_frontend_dev" class="Reference-link">Frontend</a> / <a href="https://github.com/HansungJang/PSC2024_CHATBOT" class="Reference-link">Chatbot</a></p>
+
+                        <strong>대학일자리플러스센터 카카오 챗봇 (24.11. ~ )</strong>
+                        <p>기획 & Dev | <a href="http://pf.kakao.com/_unysn" class="Reference-link">Channel</a></p>
+
+                        <strong>AI 교내 활동 멘토링 챗봇 (24.09. ~ 24.11.)</strong>
+                        <p>기획 & Dev | <a href="https://chatgpt.com/g/g-5axvpHM09-jinro-mentobos" class="Reference-link">GPTs</a></p>
+
+                        <strong>VIA-Flight (24.01. ~ 24.03.)</strong>
+                        <p>Front-end | <a href="https://github.com/LikeLionHGU/ViaFlight_Front" class="Reference-link">Github</a></p>
+
+                        <strong>Easy-Find (23.09. ~ 24.02.)</strong>
+                        <p>기획 & Dev | <a href="https://even-fowl-553.notion.site/Easy_Find-60d5ee2f02704001ad15ca225a763555" class="Reference-link">Notion Case Study</a></p>
+
+                        <strong>AI활용 교내 분실물 서비스 (22.06. ~ 22.07.)</strong>
+                        <p>기획 & Dev</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="profile-section">
+                <h2>Experience & Awards</h2>
+                <ul class="profile-section-style">
+                    <li class="profile-section-list">
+                        <h3>Awards</h3>
                         <ul>
-                            <strong>
-                            <li>
-                            2023, 
-                            <a  id="experience-link" href="https://even-fowl-553.notion.site/Easy_Find-60d5ee2f02704001ad15ca225a763555?pvs=4" title="더 알아보기">
-                                Easy_Find [팀내 직무: PL]</a>
-                            </strong>
-                            <p> <br>
-                                Easy_Find는 한동대학교의 교내 분실물 정보 조회및 등록에 번거로움이 있는 팀원들의 경험을 토데로 
-                                온-오프라인 서비스를 개발하는 팀입니다. 저는 해당 팀에서 문제 정의와 project 방향을 제시하는 동시에 
-                                서비스의 demo버전 제작에서 논코드로 제작 작업을 진행하였습니다. 
-                                <br><br>
-
-                                <strong>담당 업무</strong>
-                                <ul id="easy_find_role">
-                                    <li>서비스할 문제 정의및 설문 조사</li>
-                                    <li>선행적으로 '분실물 서비스 운영' 조직 조사및 연락</li>
-                                    <li>교내 분실물 서비스 정보 유통 되고 있는 채널 분석(분실물 유형, 빈도)</li>
-                                    <li>팀원들 역할 분배 및 장점 발굴</li>
-                                    <li>Web 서비스 데모 FlowChart 작업</li>
-                                    <li>Web 데모 버전 개발(Non-code, waveon 플랫폼 사용)</li>
-                                </ul>
-                                <br>
-                                I played a pivotal role within the Easy_Find team, a dynamic group dedicated to creating online 
-                                and offline services tailored to the needs of individuals facing challenges in searching for and registering information on lost items at Handong University.
-                                Taking charge of problem definition and project direction, I provided strategic guidance to the team, ensuring a clear vision for our endeavors.
-                                Additionally, I actively contributed to the non-code production of the demo version of the service, emphasizing a holistic approach to project development.
-                                Through my multifaceted involvement, I aimed to address the specific concerns of our target audience, fostering a comprehensive solution that streamlined the process of managing lost items on campus.
-                                I am excited about the prospect of growing together with the Like a Lion team, leveraging our collective skills and experiences to achieve success in our shared objectives.
-                    
-                                
-                            </p>
-                            </li>
+                            <li>한동대학교 PSC프로그램 2024 아이디어톤, 2등 [<a href="https://drive.google.com/drive/folders/1Lxajwfk5tjdF_DBVFbS0I1FioByU36jy?usp=sharing" class="Reference-link">Link</a>]</li>
+                            <li>GALA 인공지능 활용 아이디어 공모전 예선</li>
                         </ul>
                     </li>
-    
-                </ul>
-            </div>
-
-
-            <!--Goal section -->
-            <div class ="profile-section">
-                <h2>Goal</h2> 
-                <ul class="profile-section-style">
-                    <li class ="profile-section-list">
-                        <h3>2024 winter vacation</h3>
-                        <ol type="1"> <!--적용이 되지 않음?, css에서 초기화 때문?-->
-                            <li>멋쟁이 사자 활동을 통해서 ‘web 서비스 개발’ workflow 경험, 채득화 </li>
-                            <li>‘우아한 형제’ 관심 있는 기업 마케팅, 경영, 문화 공부하기(관련 논문 3편) </li>
-                            <li>알고리즘, 영어 단어 300 공부하기  </li>
-                        </ol>
-
+                    <li class="profile-section-list">
+                        <h3>Work & Experience</h3>
+                        <ul id="easy_find_role">
+                            <li>G-star 2025, NC CINDER CITY 부스 staff (25.11.)</li>
+                            <li>우간다 디자인스프린트 캠프 TA (25.07.)</li>
+                            <li>한동대 일자리플러스센터 챗봇 운영 매니저 (25.03. ~ )</li>
+                            <li>역전할머니맥주 미스테리 Shopper 리포터 (23.05. ~ 23.06.)</li>
+                            <li>대한민국 육군 병장 만기전역 (21.01. ~ 22.07.)</li>
+                        </ul>
                     </li>
                 </ul>
-
             </div>
-            
 
-
-            <!--More about me section -->
-            <div class ="profile-section">
-                <h2>More about me</h2>
+            <div class="profile-section">
+                <h2>Goal & Insight</h2> 
                 <ul class="profile-section-style">
-                    <li class ="profile-section-list">
-                        <h3>Strength</h3>
-                        <p>
-                            keywords: 공부할 자료 찾기, 정리하기<br><br>
-
-                            My strengths lie in my ability to swiftly locate relevant study materials, 
-                            enabling me to efficiently gather knowledge and enhance my understanding of various subjects.
-                            This proficiency not only streamlines my learning process but also empowers me to stay well-informed and excel academically.
-                            Additionally, I possess a strong intrinsic drive when it comes to pursuing project goals.
-                            This determination serves as a powerful force, propelling me forward and keeping me focused on achieving the desired outcomes. 
-                            I approach each task with a sense of responsibility, ensuring that I fulfill my commitments and contribute effectively to the success of any project or endeavor.
-                            The combination of these strengths allows me to approach challenges with diligence, enthusiasm, and a commitment to excellence.
-                        </p>
-
-                        <h3>RC</h3>
-                        <p>열송학사</p>
-
-                        <h3>Hobby</h3>
-                        <ol type="1">
-                            <li>혼자 영화보러 가기</li>
-                            <li>맛집 찾아 식도락 여행하기</li>
-                            <li>독립서점 혹은 새로운 도서관 찾아 다니기</li>
-                            <br><br>
-                        
-                        </ol>
-                        <p>
-                            In my leisure time, I indulge in a variety of hobbies that bring joy and fulfillment to my life.
-                            One of my favorite pastimes is going to the movies alone. 
-                            There's something uniquely immersive and enjoyable about experiencing a film solo,
-                            allowing me to fully immerse myself in the storyline and appreciate the cinematic art form.
-                            Another passion of mine is embarking on gastronomic adventures to discover hidden culinary gems.
-                            I love exploring different neighborhoods in search of exceptional restaurants, savoring diverse flavors,
-                            and expanding my palate.
-                            Additionally, I find solace and excitement in discovering independent bookstores or new libraries.
-                            There's a certain charm in exploring the shelves, discovering literary treasures, and losing myself in the captivating worlds created by talented authors.
-                            These hobbies not only provide relaxation and entertainment but also contribute to my ongoing journey of self-discovery and exploration.</p>
-
-
-                        <h3><a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC" 
-                            title="Mbti 검사하러 가기">
-                            Mbti<span id="click_me">(click me) </span></a>
-                        </h3>
-                        
-                            <p>
-                                나의 성격 유형: INFJ-T(옹호자)<br><br>
-
-                                The INFJ-T personality type, characterized by Introversion, Intuition, Feeling, and Judging with a Turbulent trait, encapsulates individuals who are empathetic, visionary, and driven by a sense of purpose.
-                                They are introverted and intuitive, often preferring solitude and focusing on future possibilities.
-                                The feeling aspect highlights their reliance on emotions and values in decision-making, contributing to their compassionate and harmonious nature. 
-                                Despite the judging trait, INFJ-T individuals are adaptable, and their turbulent nature makes them sensitive to stress while also fostering a perfectionistic drive.
-                                They are often idealistic, insightful, and goal-oriented, with a strong desire to make a positive impact on the world, forming deep, meaningful connections selectively in their private and reserved manner.
-                            </p>
-
-                        <h3>Favor of Food</h3>
-                        <p>[Love]: 치킨! 홍차! Nespresso!</p>
-                        <p>[Hate]: 물에서 사는 친구들은 아직 조금... 친하지 않아요; </p>
-
-                        <h3>TMI</h3>
-                        <p>
-                            부모님댁에 응가한 이후 경쾌하게 뒤돌아 보는 귀여운 멍멍이를 키우고 있습니다. 
+                    <li class="profile-section-list">
+                        <h3>Insight</h3>
+                        <p style="font-size: 0.9em; line-height: 1.6;">
+                            "Vibe Coding"을 통해 AI를 적극 활용하며 효율을 높였지만, 원리를 모를 때의 답답함을 경험했습니다. <br>
+                            이제는 도구를 맹신하기보다 기본 원리에 대한 학습을 병행하며 탄탄한 기본기를 갖춘 개발자가 되고자 합니다.
                         </p>
                         <br>
-                        <!--video insertion tag-->
-                        <!--참고자료: 
-                            1) video tag에 대해서: https://www.w3schools.com/html/html5_video.asp
-                            2) 반복재생, 음소거 기능 추가: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kira4195&logNo=221249440427
-                        -->
-
-                        <video width="300" height="200" autoplay loop muted>
-                            <source src="puppy.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <h3>Interests</h3>
+                        <p>#game #contents #e-commerce #실패와생활불편</p>
                     </li>
-
                 </ul>
             </div>
 
-            <!--Reference section -->
-            <div class ="profile-section">
-                <h2>Reference & Study</h2> 
+            <div class="profile-section">
+                <h2>Volunteer & Social</h2>
                 <ul class="profile-section-style">
-                    <li class ="profile-section-list">
-                        <h3>Reference</h3>
+                    <li class="profile-section-list">
                         <p>
-                             profile 과제를 진행하며 참고한 자료 출처 입니다. 
-                             <br>
-                             <br>
-                            <div class="reference-subtitle">[참고 자료]</div>
-                             Project Outline: 
-                             <ul  class="outline-list"> 
-                                <li  class="Reference-link"><a href="https://youtu.be/KYo62fhaR7M?si=JW931ffjVOEd_Ysb">반응형 자기소개 웹사이트 따라 만들기(티티하우스/빔캠프)</a></li>
-                             </ul><br>
-                             HTML 문법 참고 영상: <br>
-                             <ol type="1">
-                             <li><a class="Reference-link" href="https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb">WEB1 HTML & Internet(생활코딩)</a></li>
-                             <li><a class="Reference-link" href="https://youtu.be/VcUqKxMytm8?si=TNfRePgcxSizGMoa">포트폴리오 웹사이트 코딩#2, 3(조제의 세계)</a></li> 
-                            </ol>
-                            <br>
-                            <div class="reference-subtitle">[추가 공부]</div>
-                             추가적으로 CSS, Javascript영상을 보면서 project에 사용한 tag및 기능들의 용도를 
-                             이해하는데 많은 도움을 받아서 공유합니다. <br><br>
-                             CSS - <a class="Reference-link" href="https://youtu.be/Ok0bBJPtgJI?si=LTGtpI3Zra88Yxsi">WEB2 CSS(생활코딩)</a><br>
-                             Javascript - <a class="Reference-link" href="https://youtu.be/dPRtcRwKo-Y?si=qZ8B2yT1UeVUt4rx ">WEB2 JavaScript(생활코당)</a><br>
-                             <br>
-                            <div class="reference-subtitle">[기능 검색]</div>
-                             <ul  class="outline-list">
-                             <li>Element의 쓰임이 궁금할 때: <a class="Reference-link" href="https://www.w3schools.com/">w3school</a></li>
-                             <li>Browser에서 지원하는 기능인지 조회할 때: <a class="Reference-link" href=" https://caniuse.com/">can i use</a></li>
-                             </ul>
+                            - DasomX UX researcher (24.12. ~ 25.01.) <br>
+                            - 마음, 인지행동심리상담센터 활동 보조 (24.07.) <br>
+                            - 애우리 발달장애 요양시설 프로그램 보조 (23.09. ~ 23.11.) <br>
+                            - 경기 척수장애 협회 보행 훈련 보조 (17.07. ~ 08.)
                         </p>
                     </li>
-
-
-                    <li class ="profile-section-list">
-                        <h3>Study</h3>
-                        <ul>
-                            <li>
-                                <p>
-                                    Profile과제를 진행하며 공부한 내용을 정리한 Notion 입니다.<br>
-                                    멋쟁이 사자 과제 study 기록 [링크] 
-                                    <ul class="outline-list">
-                                        <li class="Reference-link"> <a href="https://even-fowl-553.notion.site/Web-9b0bc2229ac14f669434516150a36032?pvs=4">Notion</a></li>
-                                        <li class="Reference-link"><a href="https://github.com/HansungJang/Lion_HGU_2024_Jang">Github Profile</a></li>
-                                    </ul>
-                            
-                                </p>
-                            </li>
-
-                            <li>
-                                <p> 
-                                    CSS과제를 진행하며 공부한 내용을 정리한 Notion 입니다.<br>
-                                    멋쟁이 사자 과제 study 기록 [링크] </p>
-                                <ul class="outline-list">
-                                    <li class="Reference-link"><a href="https://even-fowl-553.notion.site/CSS-Github-e37e98bb9b1147f091c866fa93b62333?pvs=4">Notion</a></li>
-                                    <li class="Reference-link"><a href="https://hansungjang.github.io/day2-assignment/">멋쟁이 사자 CSS 과제</a></li>
-                                    
-                                </ul>
-                                
-                            </li>
-
-
-                            <li>
-                                <p> 
-                                    javascript과제를 진행하며 공부한 내용을 정리한 Notion 입니다.<br>
-                                    멋쟁이 사자 과제 study 기록 [링크] </p>
-                                <ul class="outline-list">
-                                    <li class="Reference-link"><a href="">Notion 정리중 입니다</a></li>
-                                    <li class="Reference-link"><a href="https://hansungjang.github.io/day3_assignment/">멋쟁이 사자 JS 과제</a></li>
-                                    
-                                </ul>
-                                
-                            </li>
-                        </ul>
-
-                    </li>
                 </ul>
-
             </div>
 
         </div>
-
     </body>
-
 </html>
-

@@ -1,6 +1,6 @@
 /*Animation */
 @keyframes rolling{
-    /*Sol 1.  margin »ç¿ëÇÏ´Â ¹æ¹ı
+    /*Sol 1.  margin ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
     
     0%{
                 margin-top: 0;
@@ -17,7 +17,7 @@
     
     */
 
-    /*Sol 2. transform, translate È°¿ë ±â¹ı (%ºñÀ² ·Î ÀÌµ¿)  */
+    /*Sol 2. transform, translate È°ï¿½ï¿½ ï¿½ï¿½ï¿½ (%ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ìµï¿½)  */
     0%{         transform: translateY(0); 
     }
     25%{        transform: translateY(-20%);
@@ -32,16 +32,16 @@
 }
 
 
-/*[½ÃÀÛ] CSS ÀÛ¾÷¿¡ ¾Õ¼­ reset°úÁ¤!*/
+/*[ï¿½ï¿½ï¿½ï¿½] CSS ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½Õ¼ï¿½ resetï¿½ï¿½ï¿½ï¿½!*/
 
 /*
-CSS ±âº» °³³ä 
-1) block, inline element; ¿ä¼ÒÀÇ ¹üÀ§°¡ À¥ ÀüÃ¼ ¿µ¿ª
-(block: ½±°Ô ÁÙ¹Ù²ŞÀ» ÀÏÀ¸Å°´Â ¿ä¼Ò, inline: contextÅ©±â ¸¸Å­ ¿µ¿ª) 
-2) context, padding, border, margin ÀÇ¹Ì
-[Âü°íÀÚ·á]
-1. »ıÈ°ÄÚµù web2 - CSS(¹Ú½º¸ğµ¨): https://youtu.be/MLjCVUspcDo?si=pOntIIy7U0ZfR4WS
-2. °Ë»ö ºí·Î±× ±Û: https://velog.io/@taeha7b/block-Inline-box-model 
+CSS ï¿½âº» ï¿½ï¿½ï¿½ï¿½ 
+1) block, inline element; ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
+(block: ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¹Ù²ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½, inline: contextÅ©ï¿½ï¿½ ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½) 
+2) context, padding, border, margin ï¿½Ç¹ï¿½
+[ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½]
+1. ï¿½ï¿½È°ï¿½Úµï¿½ web2 - CSS(ï¿½Ú½ï¿½ï¿½ï¿½): https://youtu.be/MLjCVUspcDo?si=pOntIIy7U0ZfR4WS
+2. ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½Î±ï¿½ ï¿½ï¿½: https://velog.io/@taeha7b/block-Inline-box-model 
 
 */
 
@@ -52,25 +52,25 @@ body, h1, h2, p, ul{
     
 }
 
-/*ulÀÇ ¼ø¼­ Ã·ÀÚ »èÁ¦, html li¼Ó¼ºÀÌ ³ªÅ¸³ªÁö ¾Êµµ·Ï ÇÏ´Â ¿äÀÎ*/
+/*ulï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã·ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, html liï¿½Ó¼ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½Êµï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 .profile-section-list{
 list-style-type: none;
 }
 
 
-/*hÀÇ ±ÛÀÚ Å©±â, ¹®Ã¼ ¼öÁ¤*/
+/*hï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½, ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½*/
 h1, h2{
     font-size: 100%;
     font-weight: normal;
 }
 
-/*aÀÇ ¹ØÁÙ, »ö»ó »èÁ¦ ¹× ÅëÀÏ*/
+/*aï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 a{
     color: inherit;
     text-decoration: none;
 }
 
-/*[³¡] CSS ÀÛ¾÷¿¡ ¾Õ¼­ reset°úÁ¤!*/
+/*[ï¿½ï¿½] CSS ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½Õ¼ï¿½ resetï¿½ï¿½ï¿½ï¿½!*/
 
 
 body{
@@ -78,56 +78,65 @@ body{
     color: #999;
 }
 
-/*»ó´Ü ¹è°æ ÀÌ¹ÌÁö »çÀÔ ¹× ¼³Á¤ ºÎºĞ*/
+/*ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½*/
 .portrait 
 {
-    background-image: url(me2.jpg);
+    background-image: url(assets/me2.jpg);
     background-size: cover;
     /*
-    background-size: coverÀÇ ¿ªÇÒ, ÇöÀç ºÒ·¯¿Â ÀÌ¹ÌÁö¸¦ ¹èÄ¡ÇÏ´Â ¹æ¹ı
-    Âü°íÀÚ·á:  https://www.w3schools.com/cssref/css3_pr_background-size.php
+    background-size: coverï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
+    ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½:  https://www.w3schools.com/cssref/css3_pr_background-size.php
     */
     background-position: center; 
-    padding-top: 59.95%; /*ÀÌ¹ÌÁö Å©±â*/
+    padding-top: 59.95%; /*ï¿½Ì¹ï¿½ï¿½ï¿½ Å©ï¿½ï¿½*/
 }
 
 
-.profile
-{
+/* 1. ê³ ì • ë†’ì´ ì„¤ì • ì œê±° ë° ìë™ ì¡°ì ˆ */
+.profile {
     padding: 4%;
-    min-height: 4500px;
+    /* min-height: 4500px;  <-- ì´ ì¤„ì„ ì‚­ì œí•˜ê±°ë‚˜ ì•„ë˜ì™€ ê°™ì´ autoë¡œ ë³€ê²½í•˜ì„¸ìš” */
+    min-height: 100vh; 
+    height: auto; 
 }
 
+/* 2. ì„¹ì…˜ ê°„ê²© ë° ë†’ì´ ìœ ì—°í™” */
 .profile-header,
 .profile-section {
-    padding-bottom: 14%;
-    /*
-    padding bottomÀÇ ¿ªÇÒ
-    (contentsÀÇ °æ°è ÀÏÁ¤°£°İ ¶³¾îÁö°Ô, ÇØ´ç ÄÚµå¿¡¼­´Â Profile ³»¿ëº° ±¸ºĞ °¡µ¶¼ºÀ» À§ÇØ¼­ »ç¿ë)
-    */
+    padding-bottom: 10vh; /* ê³ ì • pxë³´ë‹¤ vh(ë·°í¬íŠ¸ ë†’ì´) ë‹¨ìœ„ê°€ ìœ ì—°í•©ë‹ˆë‹¤ */
+    height: auto;         /* ë‚´ë¶€ ì½˜í…ì¸ ì— ë”°ë¼ ëŠ˜ì–´ë‚˜ë„ë¡ ì„¤ì • */
+    overflow: visible;    /* ë‚´ìš©ì´ ë„˜ì³ë„ ì˜ë¦¬ì§€ ì•Šê²Œ ì„¤ì • */
 }
 
+/* 3. Sticky ì œëª©ì˜ ë°°ê²½ ê²¹ì¹¨ ë°©ì§€ */
 .profile-section h2 {
-  /*profile °æ°è¼± style(border-top)*/
-  /*https://www.w3schools.com/cssref/pr_border-top.php*/
     border-top: 5px solid;
     color: orangered; 
     font-size: 1.5rem;
-    /*Profile section title °ªÀÌ ½ºÅ©·Ñ ÇÏ´Â µ¿¾È ÀÌ¾îÁöµµ·Ï ÇÏ´Â ÀÛ¾÷*/
-   /* border: 1px solid red; ¿µ¿ª*/ 
-    position: sticky;  /*»ó´Ü ÀÌ¹ÌÁö °íÁ¤ ¸í·É¾î*/
-    top:0%;  /*ÀÌ¾îÁö´Â ¿µ¿ª ½ÃÀÛÁ¡?? -> ÇØ´çºÎºĞ ¿ªÇÒÀº?? */
-    background-color: #111; 
-    box-shadow: 0 0 10px 10px #111; /*±×¸²ÀÚ ´À³¦, Åõ¸íµµ*/
+    position: sticky;  
+    top: 0;  
+    background-color: #000; /* ë°°ê²½ìƒ‰ì„ ê²€ì •ìœ¼ë¡œ í™•ì‹¤íˆ ì§€ì • (ê¸€ìê°€ ê²¹ì³ ë³´ì´ì§€ ì•Šê²Œ í•¨) */
+    z-index: 10;           /* ì½˜í…ì¸ ë³´ë‹¤ ìœ„ì— ì˜¤ë„ë¡ ì„¤ì • */
+    padding: 10px 0;
 }
 
+/* 4. ë¦¬ìŠ¤íŠ¸ ìš”ì†Œ ê°„ê²© ì¡°ì • (ê°€ë…ì„±) */
+.profile-section-list strong {
+    display: block;        /* ì¤„ë°”ê¿ˆì„ ì¼ìœ¼ì¼œ ì œëª©ì²˜ëŸ¼ ë³´ì´ê²Œ í•¨ */
+    margin-top: 20px;
+    color: white;
+}
+
+.profile-section-list p {
+    margin-bottom: 5px;
+}
 .name{
     font-size: 30px;
     line-height: 1.5;
     font-style: italic; 
-    /*tip, ±ÛÀÚÀÇ °£°İ, ³Ê¹« ºÙ¾î ÀÖÀ¸¸é ±ÛÀÚ°¡ ÀÏºÎ Â©¸®´Â °æ¿ì°¡ ÀÖ´Ù.*/
-    /*ÀÌ¸§ÀÌ ¼øÂ÷ÀûÀ¸·Î ¿Ã¶ó°¡´Â ÀÛ¾÷ À§ÇØ¼­, ÁÂÇ¥ ÃÊ±â À§Ä¡ ¼³Á¤*/
-    /*¼øÂ÷ÀûÀ¸·Î ³»·Á°¡´Â ¸ğ¼ÇÀ» ±¸ÇöÇÏ±â À§ÇØ¼­, °£°İ: 30px -> 30ÀÌ¶ó°í »ı°¢! */
+    /*tip, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½Ê¹ï¿½ ï¿½Ù¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Ïºï¿½ Â©ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ì°¡ ï¿½Ö´ï¿½.*/
+    /*ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã¶ó°¡´ï¿½ ï¿½Û¾ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½, ï¿½ï¿½Ç¥ ï¿½Ê±ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½*/
+    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½, ï¿½ï¿½ï¿½ï¿½: 30px -> 30ï¿½Ì¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½! */
     margin-bottom: 30px; 
 }
 
@@ -135,30 +144,30 @@ body{
     display: inline-block;
     color: white;
     /*background-color: red;*/
-    vertical-align: top; /*webÀÇ »ó´Ü ºÎºĞ ¸ÂÃß´Â ÀÛ¾÷*/
+    vertical-align: top; /*webï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Îºï¿½ ï¿½ï¿½ï¿½ß´ï¿½ ï¿½Û¾ï¿½*/
 
-    /*Á÷¾÷ ÀÌ¸§ ¿òÁ÷ÀÌ´Â ¿ø¸®*/
-    height: 1.5em; /*(¿µ¿ª Á¤ÇÏ±â) ³ôÀÌ Á¦ÇÑ, º¸ÀÌ´Â ±ÛÀÚÀÇ ÃÖ°í fontÅ©±â¸¦ ¼³Á¤*/
-    overflow: hidden; /*(¼û±â±â) ¿µ¿ª¿¡¼­ ¹ù¾î³ª´Â ±ÛÀÚ ¼û±â±â */
-    /*Á÷¾÷ ÀÌ¸§ ¿Ã¶ó°¡°Ô ÇÏ´Â ¿ø¸®, ÁÂÇ¥ ÀÌµ¿*/
-    /*margin ¿ä¼Ò´Â µÚ¿¡ ¿À´Â ¿ä¼Ò¿¡ ¿µÇâÀ» ÁØ´Ù! so, html¿¡¼­ ¿òÁ÷ÀÏ ¿µ¿ªÀ¸·Î ³ª´µ¾î ÁØ´Ù*/
+    /*ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+    height: 1.5em; /*(ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö°ï¿½ fontÅ©ï¿½â¸¦ ï¿½ï¿½ï¿½ï¿½*/
+    overflow: hidden; /*(ï¿½ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î³ªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ */
+    /*ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½Ã¶ó°¡°ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ç¥ ï¿½Ìµï¿½*/
+    /*margin ï¿½ï¿½Ò´ï¿½ ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½! so, htmlï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½*/
 
-    /*¿À¸¥ÂÊ ±Û¾¾°¡ Â©·Á¼­ È®Àå*/
+    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ Â©ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½*/
     padding-right: 0.5em;
 }
 
 .name-job-list{
-    /*margin-top: 0em; ºñÀ²ÀÌ À¯µ¿ÀûÀ¸·Î º¯È­ÇÒ¼ö ÀÖµµ·Ï Á¶Á¤ÇØ µÎ´Â °Í*/
+    /*margin-top: 0em; ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½Ò¼ï¿½ ï¿½Öµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î´ï¿½ ï¿½ï¿½*/
     animation-name: rolling;
-    animation-duration: 5s; /*³Ñ¾î°¡´Â ¼Óµµ*/
-    animation-iteration-count: infinite; /*¹İº¹µÇ´Â È½¼ö loop*/
-    /*animation ¿¬Ãâ ¹æÇâ, animation-direction*/
+    animation-duration: 5s; /*ï¿½Ñ¾î°¡ï¿½ï¿½ ï¿½Óµï¿½*/
+    animation-iteration-count: infinite; /*ï¿½İºï¿½ï¿½Ç´ï¿½ È½ï¿½ï¿½ loop*/
+    /*animation ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, animation-direction*/
 
 }
 
 .name-title{
-    font-size: 1.5em; /*ÀÌ¸§ fontÀÇ Å©±â º¯È­, nameÀÌ¶ó´Â divÀÇ ¼³Á¤¿¡ ºñ·ÊÇÏ¿© º¯µ¿*/
-    line-height: 1; /*ÁÙ °£°İ*/
+    font-size: 1.5em; /*ï¿½Ì¸ï¿½ fontï¿½ï¿½ Å©ï¿½ï¿½ ï¿½ï¿½È­, nameï¿½Ì¶ï¿½ï¿½ divï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+    line-height: 1; /*ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
     color: white;
 }
 
@@ -172,7 +181,7 @@ body{
   font-size: 0.7em; 
   color: white;
 }
-/*¿¬¶ô ¹öÆ°(email, tel, Linkedin) ÀÔ·ÂÀ» ³Ö±â À§ÇØ¼­ ¸¸µç css ÄÚµå*/
+/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°(email, tel, Linkedin) ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ css ï¿½Úµï¿½*/
  
 /* .icons
 {
@@ -180,18 +189,18 @@ body{
 }
 
 .icons a{
-    background-image: url("icons.png");
-    //ÀÌ¹ÌÁö È°¿ëÀ» À§ÇØ¼­ ÀÌ¹ÌÁö Å©±â Á¶ÀıÀÌ ÇÊ¿äÇßÀ½
+    background-image: url("assets/icons.png");
+    //ï¿½Ì¹ï¿½ï¿½ï¿½ È°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ï¿½ï¿½
     width: 30px; 
     height: 30px; 
-    display: inline-block; //icon °¡·Î ¹èÄ¡ 
-    //<a> tag ±ÛÀÚ Ãâ·ÂÀÌ º¸ÀÌÁö ¾Êµµ·ÏÇÏ´Â °Í, image replacement ±â¹ı
+    display: inline-block; //icon ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ 
+    //<a> tag ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Êµï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½, image replacement ï¿½ï¿½ï¿½
     text-indent: -9999px;
 
     
 }
 
-//issue ÀÌ¹ÌÁö ÀüÈ¯ÀÌ ÀÌ·ç¾îÁöÁö ¾ÊÀ½
+//issue ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 .icons a.email { background-position: 0 0; }
 .icons a.tel { background-position: -30px 0; } //center
 .icons a.Linkedin { background-position: -60px 0; } right */
@@ -199,9 +208,9 @@ body{
 
 #contactlist {
     /*
-    ±âÁØÁ¡À» »ó¼Ó¹Ş°Ú´Ù´Â ÀÇ¹Ì. (¾ø´Â °æ¿ì ±âÁØÀº viewport°¡ µÈ´Ù°í ÇÔ)
-    [Âü°íÀÚ·á] https://creamilk88.tistory.com/197 
-    ÀÚ·á¸¦ ÅëÇØ¼­´Â Á¶±İ ÀÌÇØ°¡ ¾î·Á¿ö.. 
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ó¹Ş°Ú´Ù´ï¿½ ï¿½Ç¹ï¿½. (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ viewportï¿½ï¿½ ï¿½È´Ù°ï¿½ ï¿½ï¿½)
+    [ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½] https://creamilk88.tistory.com/197 
+    ï¿½Ú·á¸¦ ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½.. 
     w3school 
     >> https://www.w3schools.com/css/css_positioning.asp 
     */
@@ -225,36 +234,36 @@ body{
   #email {
     left: 0px;
     width: 30px;
-    background: url('icons.png') 0 0;
+    background: url('assets/icons.png') 0 0;
   }
   
   #tel {
     left: 30px;
     width: 30px;
-    background: url('icons.png') -30px 0;
+    background: url('assets/icons.png') -30px 0;
     
   }
   
   #Linkedin {
     left: 60px;
     width: 30px;
-    background: url('icons.png') -60px 0;
+    background: url('assets/icons.png') -60px 0;
   }
   
-  /*¸¶¿ì½º Æ÷ÀÎÅÍ°¡ Á¢ÃËµÇ¾úÀ»¶§ ¹İÀÀ, hover¶ó°í ÇÑ´Ù. */
+  /*ï¿½ï¿½ï¿½ì½º ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ËµÇ¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, hoverï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½. */
   #email a:hover {
-    background: url('icons.png') 0 -30px;
+    background: url('assets/icons.png') 0 -30px;
   }
   
   #tel a:hover {
-    background: url('icons.png') -30px -30px;
+    background: url('assets/icons.png') -30px -30px;
   }
   
   #Linkedin a:hover {
-    background: url('icons.png') -60px -30px;
+    background: url('assets/icons.png') -60px -30px;
   }
 
-/*profile section (profile sectionÀÇ ¿ä¼Òµé¿¡ ¸ğµÎ Àû¿ë)*/
+/*profile section (profile sectionï¿½ï¿½ ï¿½ï¿½Òµé¿¡ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)*/
 .profile-section-style h3
 {
   border-top: 3px solid;
@@ -265,8 +274,8 @@ body{
 }
 
 /*
-easy_find ¸µÅ© ¹ØÁÙ ±×¾îÁö´Â È¿°ú
-[Âü°íÀÚ·á]: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+easy_find ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½ï¿½ È¿ï¿½ï¿½
+[ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½]: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
 */
 
 /*easy_find Link*/
@@ -277,17 +286,17 @@ easy_find ¸µÅ© ¹ØÁÙ ±×¾îÁö´Â È¿°ú
 }
 
   #easy_find_role{
-    /*ul Å×±× list¿ä¼ÒµéÀÌ ¾ÈÂÊÀ¸·Î Á¡ÀÌ ÂïÈ÷µµ·Ï ÇÏ´Â °Í*/
+    /*ul ï¿½×±ï¿½ listï¿½ï¿½Òµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½*/
     list-style-position: inside;
   }
 
 
-/*Mbti ¸µÅ© Ç¥½Ã*/
+/*Mbti ï¿½ï¿½Å© Ç¥ï¿½ï¿½*/
 #click_me{
   font-size: 0.75rem;
 }
 
-/*Reference ¸µÅ© Ç¥½Ã*/
+/*Reference ï¿½ï¿½Å© Ç¥ï¿½ï¿½*/
 
 .Reference-link{
   text-decoration: underline;
@@ -295,7 +304,7 @@ easy_find ¸µÅ© ¹ØÁÙ ±×¾îÁö´Â È¿°ú
 
 .reference-subtitle{
   font-size: 1.15em;
-  font-weight: bold; /*boldÃ¼ ¼±¾ğ, https://www.w3schools.com/cssref/pr_font_weight.php*/
+  font-weight: bold; /*boldÃ¼ ï¿½ï¿½ï¿½ï¿½, https://www.w3schools.com/cssref/pr_font_weight.php*/
 }
 
 .outline-list{
@@ -304,31 +313,31 @@ easy_find ¸µÅ© ¹ØÁÙ ±×¾îÁö´Â È¿°ú
 }
 
 
-  /*pc È­¸é Å©±â¿¡ ´ëÀÀÇÏ¿© º¯µ¿ÀûÀÎ È­¸é ±¸¼ºÀ» À§ÇØ¼­*/ 
-  /*media_query: È­¸éÀÇ Å©±â¿¡ ¹İÀÀÇÏ´Â ±¸¼ºÀÌ º¸ÀÌ µµ·ÏÇÏ´Â °Í. */
-@media(min-width: 900px){ /*ÀÇ¹Ì: È­¸é °¡·Î ±æÀÌ > 900px ÀÎ °æ¿ì µ¿ÀÛ*/
-  /*È­¸é ±¸¼º ¼öÁ¤ */  
+  /*pc È­ï¿½ï¿½ Å©ï¿½â¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½*/ 
+  /*media_query: È­ï¿½ï¿½ï¿½ï¿½ Å©ï¿½â¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½. */
+@media(min-width: 900px){ /*ï¿½Ç¹ï¿½: È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ > 900px ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+  /*È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */  
    
 
-  .portrait{ /*¹è°æ ÀÌ¹ÌÁö*/
+  .portrait{ /*ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½*/
       position: fixed; 
       left: 0; 
       top: 0; 
       width: 60vw; 
       height: 100vh;
-      /*padding-top »ç¿ëÇÑ´Ù¸é ÁöÁ¤ Å©±â¿¡ width, height°¡ ÇÕÇÑ °ªÀÌ µÈ´Ù*/
-      padding: 0; /*±âÁ¸ padding°ªÀ» ÃÊ±âÈ­*/ 
-      /*padding, margin ÀÌ¶õ? https://velog.io/@bami/CSS-%EB%A7%88%EC%A7%84margin%EA%B3%BC-%ED%8C%A8%EB%94%A9padding*/
+      /*padding-top ï¿½ï¿½ï¿½ï¿½Ñ´Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ Å©ï¿½â¿¡ width, heightï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½È´ï¿½*/
+      padding: 0; /*ï¿½ï¿½ï¿½ï¿½ paddingï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­*/ 
+      /*padding, margin ï¿½Ì¶ï¿½? https://velog.io/@bami/CSS-%EB%A7%88%EC%A7%84margin%EA%B3%BC-%ED%8C%A8%EB%94%A9padding*/
       
       /*
-      display: grid¸¦ ¹è¿ì°í È°¿ëÇÏ·Á°í ÇÏ¿´À¸³ª... 
-      >> grid»ö»óÀº º¯ÇÑÀÌ µÇÁö ¾Ê´Â´Ù°í ÇÏ¿©¼­, border·Î ¹æ¾ÈÀ» ´ëÃ¼ÇÔ.
-      >> ÂüÁ¶¹®¼­, https://stackoverflow.com/questions/45884630/css-grid-is-it-possible-to-apply-color-to-grid-gaps
+      display: gridï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½ï¿½... 
+      >> gridï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´Ù°ï¿½ ï¿½Ï¿ï¿½ï¿½ï¿½, borderï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½.
+      >> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, https://stackoverflow.com/questions/45884630/css-grid-is-it-possible-to-apply-color-to-grid-gaps
       */
       border-right: 5px solid;
       border-color: orange;
     }
-    .profile{ /*profile ³»¿ëµé*/
+    .profile{ /*profile ï¿½ï¿½ï¿½ï¿½ï¿½*/
       margin-left: 60vw;
     }
 }
